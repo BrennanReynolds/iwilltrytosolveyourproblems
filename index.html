@@ -116,6 +116,28 @@
         a:hover {
             color: #00ffcc;
         }
+
+        .floating-brennan {
+            position: fixed;
+            width: 200px;
+            pointer-events: none;
+            animation: brennanFade 3s ease-in-out infinite;
+            opacity: 0;
+        }
+
+        .brennan1 { left: 20px; top: 15%; animation-delay: 0s; }
+        .brennan2 { right: 20px; top: 25%; animation-delay: 0.4s; }
+        .brennan3 { left: 20px; top: 35%; animation-delay: 0.8s; }
+        .brennan4 { right: 20px; top: 45%; animation-delay: 1.2s; }
+        .brennan5 { left: 20px; top: 55%; animation-delay: 1.6s; }
+        .brennan6 { right: 20px; top: 65%; animation-delay: 2.0s; }
+        .brennan7 { left: 20px; top: 75%; animation-delay: 2.4s; }
+        .brennan8 { right: 20px; top: 85%; animation-delay: 2.8s; }
+
+        @keyframes brennanFade {
+            0%, 100% { opacity: 0; transform: translateX(-20px); }
+            50% { opacity: 0.7; transform: translateX(0); }
+        }
     </style>
 </head>
 <body>
@@ -150,5 +172,14 @@
     <footer>
         <p>&copy; 2023 Brennan Solution Company. All rights reserved.</p>
     </footer>
+
+    <img src="assets/brennan1.png" class="floating-brennan brennan1" alt="Brennan 1">
+    <img src="assets/brennan2.png" class="floating-brennan brennan2" alt="Brennan 2">
+    <img src="assets/brennan3.png" class="floating-brennan brennan3" alt="Brennan 3">
+    <img src="assets/brennan4.png" class="floating-brennan brennan4" alt="Brennan 4">
+    <img src="assets/brennan5.png" class="floating-brennan brennan5" alt="Brennan 5">
+    <img src="assets/brennan6.png" class="floating-brennan brennan6" alt="Brennan 6">
+    <img src="assets/brennan7.png" class="floating-brennan brennan7" alt="Brennan 7">
+    <img src="assets/brennan8.png" class="floating-brennan brennan8" alt="Brennan 8">
 </body>
 </html>
