@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Brennan Solution Company</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, 
+                #0a2815 0%,
+                #1a4025 100%);
+            background-image: 
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23153020" d="M50 10 L80 90 L20 90 Z"/></svg>'),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%230f2518" d="M50 20 L70 80 L30 80 Z"/></svg>'),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23153020" d="M50 15 L75 85 L25 85 Z"/></svg>'),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%230f2518" d="M50 25 L65 75 L35 75 Z"/></svg>'),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23153020" d="M50 30 L60 70 L40 70 Z"/></svg>'),
+                linear-gradient(180deg, #0a2815 0%, #1a4025 100%);
+            background-size: 150px, 100px, 120px, 90px, 80px, 100%;
+            background-repeat: repeat-x;
+            background-position: 0 50%, 50px 60%, 100px 55%, 150px 65%, 200px 70%, 0 0;
+            color: white;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+
+        nav {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 1rem;
+            backdrop-filter: blur(5px);
+        }
+
+        nav a {
+            color: #fff; /* Changed to #fff for better contrast */
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+        }
+
+        .testimonials-header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            margin-bottom: 2rem;
+        }
+
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .testimonial-bubble {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            color: #333;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .testimonial-bubble:before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            bottom: -15px;
+            border: 15px solid transparent;
+            border-top-color: white;
+        }
+
+        .client-info {
+            margin-left: 30px;
+            margin-top: 20px;
+            color: #333; /* Changed to black */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .client-info strong {
+            display: flex;
+            align-items: center;
+        }
+
+        .client-silhouette {
+            width: 70px;
+            height: 70px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23333" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>');
+            margin-right: 8px;
+            background-size: contain;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #fff; /* Changed to #fff for better contrast */
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    <div class="testimonials-header">
+        <h1>Client Testimonials</h1>
+        <p>What our satisfied clients say about us</p>
+    </div>
+
+    <div class="testimonials-container">
+        <div class="testimonial-bubble">
+            <p>"Brennan's solutions are absolutely incredible! He built a custom storage system for my garage that maximized every inch of space. His attention to detail and innovative thinking made all the difference."</p>
+            <div class="client-info">
+                <strong><span class="client-silhouette"></span>- Dr. Zigzag Thunderbolt III</strong>
+                <em>Professional Unicycle Juggler</em>
+            </div>
+        </div>
+
+        <div class="testimonial-bubble">
+            <p>"I was amazed by Brennan's workmanship and creative problem-solving abilities. He designed and built a unique workbench for my craft room that perfectly suits my needs. His solutions are both functional and beautiful!"</p>
+            <div class="client-info">
+                <strong><span class="client-silhouette"></span>- Lady Moonbeam Sparklefish</strong>
+                <em>Underwater Basket Weaver</em>
+            </div>
+        </div>
+
+        <div class="testimonial-bubble">
+            <p>"Working with Brennan was a fantastic experience. He listened to my needs and created a custom organization system that transformed my basement workshop. His solutions are practical, durable, and exceed expectations!"</p>
+            <div class="client-info">
+                <strong><span class="client-silhouette"></span>- Sir Wobbleworth Pickleheimer</strong>
+                <em>Professional Cloud Sculptor</em>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Brennan Solution Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
